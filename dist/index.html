@@ -1,14 +1,55 @@
 <!DOCTYPE html>
 <html>
-    
+
 <head>
     <title>Bea Molar</title>
-    <link rel="stylesheet" href="../src/style.css">;
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/output.css">
+
 </head>
 
-<body>
-    <h1 class="bg-red-300">Hello Tailwind</h1>
+<body class="bg-slate-300">
+
+    <!--NAVIGATION BAR-->
+    <nav class="bg-white shadow">
+        <div class="container mx-auto px-4 py-4">
+            <ul class="flex space-x-4">
+                <li class="text-left, font-bold"> Bea Molar</li>
+                <li><a href="#about" class="text-blue-600 hover:underline">About Me</a></li>
+                <li><a href="#projects" class="text-blue-600 hover:underline">Projects</a></li>
+                <li><a href="#contact" class="text-blue-600 hover:underline">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+     <!-- Sections -->
+     <section id="about" class="py-20 bg-gray-200">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold">About Me</h2>
+            <p class="mt-4">This is the section where you introduce yourself.</p>
+        </div>
+    </section>
+
+    <section id="projects" class="py-20 bg-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold">Projects</h2>
+            <p class="mt-4">Showcase your projects here.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-gray-200">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold">Contact Me</h2>
+            <p class="mt-4">Provide your contact information here.</p>
+        </div>
+    </section>
+
+     <!-- Optional: Footer -->
+     <footer class="bg-white py-4 text-center">
+        <p>&copy; 2024 Bea Molar. All Rights Reserved.</p>
+    </footer>
+    
+    
 
 </body>
-
 </html>
