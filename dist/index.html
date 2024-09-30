@@ -1,65 +1,70 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>Bea Molar</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../src/output.css">
+    <link rel="stylesheet" href="../src/style.css">
+
+    <!--LINKS-->
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap" rel="stylesheet">
 
 </head>
 
-<body class="bg-slate-300">
-
-    <!--background image-->
-    <div class="relative h-screen">
-        <img src="../images/background.jpg" alt="Description of the image" class="w-full h-full object-cover" />
-        <h1 class="absolute inset-0 flex items-center justify-center text-white text-4xl">Welcome to My Page!</h1>
-    </div>
+<body>
     
 
-    <!--NAVIGATION BAR-->
-    <nav class="bg-white shadow">
-        <div class="container mx-auto px-4 py-4">
-            <ul class="flex space-x-4">
-                <li class="text-left, font-bold"> Bea Molar</li>
-                <li><a href="#about" class="text-blue-600 hover:underline">About Me</a></li>
-                <li><a href="#projects" class="text-blue-600 hover:underline">Projects</a></li>
-                <li><a href="#contact" class="text-blue-600 hover:underline">Contact</a></li>
+    <!---NAVIGATION BAR-->
+      <!-- Navbar -->
+      <nav class="fixed top-0 left-0 w-full bg-gray-800 bg-opacity-50 text-white shadow-md z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between">
+            <div class="font-leaguespartan font-bold text-2xl text-zinc-300">Bea Molar</div>
+
+            <ul class="flex space-x-8">
+                <li><a href="#home" class="text-xl px-4 py-2 rounded-md hover:bg-slate-600 hover:text-slate-50 transition">Home</a></li>
+                <li><a href="#about"  class="text-xl px-4 py-2 rounded-md hover:bg-slate-600 hover:text-slate-50 transition">About</a></li>
+                <li><a href="#projects"  class="text-xl px-4 py-2 rounded-md hover:bg-slate-600 hover:text-slate-50 transition">Resume</a></li>
+                <li><a href="#contact"  class="text-xl px-4 py-2 rounded-md hover:bg-slate-600 hover:text-slate-50 transition">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-     <!-- Sections -->
-     <section id="about" class="py-20 bg-gray-200">
-        <div class="container mx-auto text-center">
-            <h2 class="text-3xl font-bold">About Me</h2>
-            <p class="mt-4">This is the section where you introduce yourself.</p>
+
+
+
+    <!--SECTIONS-->
+    <!--HOME-->
+    <section id="home" class="h-screen flex items-center justify-center bg-home">
+        <div class="text-center">
+            <h1 class="text-6xl font-bold mb-4">Welcome to My Portfolio</h1>
+            <p class="text-2xl">A showcase of my work and skills</p>
         </div>
     </section>
-
-    <section id="projects" class="py-20 bg-white">
-        <div class="container mx-auto text-center">
-            <h2 class="text-3xl font-bold">Projects</h2>
-            <p class="mt-4">Showcase your projects here.</p>
-        </div>
-    </section>
-
-    <section id="contact" class="py-20 bg-gray-200">
-        <div class="container mx-auto text-center">
-            <h2 class="text-3xl font-bold">Contact Me</h2>
-            <p class="mt-4">Provide your contact information here.</p>
-        </div>
-    </section>
-
-     <!-- Optional: Footer -->
-     <footer class="bg-white py-4 text-center">
-        <p>&copy; 2024 Bea Molar. All Rights Reserved.</p>
-    </footer>
-
-
-   
-    
     
 
+    <section id="about" class="h-screen bg-gray-100 flex items-center justify-center">
+        <div class="text-center">
+            <h2 class="text-4xl font-bold mb-4">About Me</h2>
+            <p class="text-lg">I am a [your profession], passionate about [your interests]...</p>
+        </div>
+    </section>
+
+    <section id="projects" class="h-screen flex items-center justify-center text-white bg-blue-600">
+        <div class="text-center">
+            <h2 class="text-4xl font-bold mb-4">Projects & Resume</h2>
+            <p class="text-lg">Here are some of the projects I've worked on...</p>
+        </div>
+    </section>
+
+    <section id="contact" class="h-screen bg-gray-100 flex items-center justify-center">
+        <div class="text-center">
+            <h2 class="text-4xl font-bold mb-4">Contact Me</h2>
+            <p class="text-lg">Feel free to reach out to me at [your email] or through social media...</p>
+        </div>
+    </section>
+
+    
+
+    
 </body>
 </html>
