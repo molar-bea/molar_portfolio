@@ -5,6 +5,7 @@
     background-image: url("../images/background.jpg"); /* Optional background color for the section */
     background-size: cover;
     background-position: center;
+    background-color: black;
 }
 
 .image-container {
@@ -15,6 +16,7 @@
     width: 100%; /* Responsive image */
     max-width: 400px; /* Limit the maximum width */
     border-radius: 10px; /* Optional: round the corners */
+
 }
 
 .text-content {
