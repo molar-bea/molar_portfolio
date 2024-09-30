@@ -2,7 +2,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr; /* Create two equal columns */
     align-items: center; /* Align items vertically in the center */
-    background: #f0f4f8; /* Optional background color for the section */
+    background-image: url("../images/background.jpg"); /* Optional background color for the section */
+    background-size: cover;
+    background-position: center;
 }
 
 .image-container {
@@ -30,8 +32,3 @@
     color: #2980b9; /* Change link color */
 }
 
-.bg-home {
-    background-image: url('../images/background.jpg'); 
-    background-size: cover;
-    background-position: center;
-}
