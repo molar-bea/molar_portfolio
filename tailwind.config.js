@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily:{
-        leagueSpartan:['League Spartan', 'sans-serif']
+        leagueSpartan:['League Spartan', 'sans-serif'],
+        merriweather:['Merriweather','serif'],
       }
     },
   },

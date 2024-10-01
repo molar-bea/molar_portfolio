@@ -1,36 +1,23 @@
+html{
+    scroll-behavior: smooth;
+}
 #home {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Create two equal columns */
-    align-items: center; /* Align items vertically in the center */
-    background-image: url("../images/background.jpg"); /* Optional background color for the section */
-    background-size: cover;
-    background-position: center;
-    background-color: black;
+    display: flex; /* Use flexbox layout */
+    background-image: url(../images/beige.png);
+    border-radius: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
 }
 
-.image-container {
-    padding: 20px; /* Optional padding */
+.text-container{
+    align-self: center;
 }
 
-.profile-image {
-    width: 100%; /* Responsive image */
-    max-width: 400px; /* Limit the maximum width */
-    border-radius: 10px; /* Optional: round the corners */
-
+.image-container{
+    order:2;
+    align-self:flex-end;
+    margin-left: 100px;
 }
 
-.text-content {
-    padding: 20px; /* Add some padding */
-}
-
-.highlight {
-    font-weight: bold; /* Highlighting 'BEA MOLAR' */
-    color: #2c3e50; /* Change this color as desired */
-}
-
-.social-links a {
-    margin: 0 10px; /* Space out social links */
-    text-decoration: none; /* Remove underline */
-    color: #2980b9; /* Change link color */
-}
 
