@@ -1,6 +1,10 @@
 html{
     scroll-behavior: smooth;
 }
+.navbar{
+    background-color: #efe7da;
+    border-radius: 0px 0px 100px 100px;
+}
 #home {
     display: flex; /* Use flexbox layout */
     background-image: url(../images/beige.png);
