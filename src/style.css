@@ -142,11 +142,12 @@ html{
 
 /*RESUME PAGE*/
 
-#hr{
-    border: 1.5px solid #262626; /* Change color */
+hr{
+    border: 1px dashed #000000; /* Change color */
     margin: 20px 0; /* Add vertical spacing */
 }
 
+/*EDUCATION*/
 
 .header{
     background-color:#fafafa;
@@ -244,6 +245,42 @@ img {
     filter: brightness(0.5);
 }
 
+
+/*SKILLS*/
+
+.container-skills{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(10, 1fr); 
+    justify-content: center;
+}
+
+.s-item-1{
+    grid-row: span 1;
+    grid-column: span 10;
+}
+
+.s-item-2{
+    grid-area: 2/ 1 / 6 / 11;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.s-item-3{
+    grid-area: 6/ 1 / 10 / 11;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.square{
+    width: 100px;
+    height: 100px ;
+    border-radius: 10px;
+    box-shadow:  5px 5px 10px rgba(19, 19, 21, 0.516);
+}
 
 
 
