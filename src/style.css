@@ -44,7 +44,7 @@ html{
     margin-left: 100px;
 }
 
-/*NEW ABOUT SECTION*/
+/*ABOUT SECTION*/
 #about{
     display: grid;
     justify-content: center; 
@@ -56,7 +56,7 @@ html{
     grid-template-rows: repeat(10,1fr);
     grid-template-columns: repeat(10,1fr);
     width: 100%;
-    height: 1000px; /*need pa i edir ang height ania ha*/
+    height: 100hv; /*need pa i edir ang height ania ha*/
 }
 
 .a-item-1{
@@ -89,63 +89,88 @@ html{
 /*PORTFOLIO SECTION*/
 .container-portfolio{
     display: grid;
-    grid-template-rows: repeat(8, 1fr); /* Dynamic height */
-    grid-template-columns: repeat(9, 1fr); /* Dynamic width */
-    width: 95%; /* Or some other flexible unit */
-    height: 100vh;/* Adjusts based on content */
+    grid-template-rows: repeat(10,1fr);
+    grid-template-columns: repeat(10, 1fr); 
+    width: 100%;
+    height:100hv;
+    justify-content: center;
+    
     
 }
 
 .p-item-1{
     grid-row: span 1;
-    grid-column:span 9;
+    grid-column:span 10;
     display:flex;
-    flex-direction:column;
     justify-content:center;
     align-content:center;
-    text-align:center;
 }
 
 .p-item-2{
-    grid-area: 2 / 1 / 9 / 4;
+    grid-area: 2 / 1 / 6 / 11;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+
+.p-image-container{
+    border: 1px solid #525252;
+    width: 29%;
+    height: fit-content;
+    border-radius: 20px;
+    margin:20px 50px;
+    box-shadow: 5px 5px 10px rgba(19, 19, 21, 0.516);
+    overflow: hidden;
+
 }
 
 .p-item-3{
-    grid-area: 2 / 4 / 9 / 7;
+    grid-area: 6 / 1 / 9 / 11;
+    display: flex;
 }
 
-.p-item-4{
-    grid-area: 2 / 7 / 9 / 10;
+.p-text-container{
+    width:30%;
+    height: auto;
+    border: 1px solid #525252;
+    margin: 20px;
 }
+
+
 
 /*CONTACT SECTION*/
 .container-contact{
     display: grid;
-    grid-template-rows: repeat(6, 1fr); /* Dynamic height */
-    grid-template-columns: repeat(10, 1fr); /* Dynamic width */
-    width: 100%; /* Or some other flexible unit */
-    height:600px/* Adjusts based on content */
+    grid-template-rows: repeat(10,1fr);
+    grid-template-columns: repeat(10, 1fr); 
+    width: 100%;
+    height:100hv;
+    justify-content: center;
 
 }
 
 .c-item-1{
-    grid-row: span 1;
-    grid-column:span 10;
+    grid-area: 1 / 1 / 2 / 11;
     display:flex;
-    flex-direction:column;
     justify-content:center;
     align-content:center;
-    text-align:center;
+}
 
+.c-item-2{
+    grid-area: 2 / 1 / 6 / 11;
+    display: flex;
+
+}
+
+.rectangle{
+    width: ;
+    height: ;
+    background-color: ;
+    box-shadow: 5px 5px 10px rgba(19, 19, 21, 0.516);
 }
 
 
 /*RESUME PAGE*/
-
-hr{
-    border: 1px dashed #000000; /* Change color */
-    margin: 20px 0; /* Add vertical spacing */
-}
 
 /*EDUCATION*/
 
@@ -201,10 +226,9 @@ hr{
 }
 
 .r-image-container:hover{
-    border-color: #404040;
+    border: 1.5px solid #404040;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
     border-radius: 10px;
-
 }
 
 
@@ -258,18 +282,30 @@ img {
 .s-item-1{
     grid-row: span 1;
     grid-column: span 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .s-item-2{
-    grid-area: 2/ 1 / 6 / 11;
+    grid-area: 2 / 1 / 3 / 11;
+}
+
+.s-item-3{
+    grid-area: 3/ 1 / 7 / 11;
     display: flex;
     justify-content: space-between;
 
 }
 
+.s-item-4{
+    grid-area: 7 / 1 / 8/ 11;
+}
 
-.s-item-3{
-    grid-area: 6/ 1 / 10 / 11;
+
+.s-item-5{
+    grid-area: 8/ 1 / 12 / 11;
     display: flex;
     justify-content: space-between;
 
@@ -281,6 +317,53 @@ img {
     border-radius: 10px;
     box-shadow:  5px 5px 10px rgba(19, 19, 21, 0.516);
 }
+
+
+/*WORKING EXPERIENCE*/
+.container-work{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(10, 1fr); 
+    justify-content: center;
+}
+
+.w-item-1{
+    grid-area: 1 / 1 / 2 / 11;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.w-item-2{
+    grid-area: 2 / 1 / 6 / 11;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.w-image-container{
+    border: 1px solid #525252;
+    width: 50%;
+    height: auto;
+    margin-top: 25px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(19, 19, 21, 0.516) ;
+}
+
+.w-item-3{
+    grid-area: 6 / 1 / 9 / 11;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
 
 
 
