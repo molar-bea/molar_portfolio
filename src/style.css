@@ -159,14 +159,13 @@ html{
 .c-item-2{
     grid-area: 2 / 1 / 3 / 3;
     display: flex;
-    margin: 20px;
+    margin: 20px 20px 0px 20px;
     align-content: center;
 
 }
 
 .c-item-3{
     grid-area: 3 / 1 / 4 / 2 ;
-    
 }
 
 .c-item-4{
@@ -208,7 +207,6 @@ html{
 
 /*RESUME PAGE*/
 
-/*EDUCATION*/
 
 .header{
     background-color:#fafafa;
@@ -216,6 +214,12 @@ html{
     text-align: center;
     opacity: 0.7;
     border-bottom: 1.5px solid #737373;
+}
+
+/*EDUCATION*/
+
+.section-education{
+
 }
 
 .container-education
@@ -235,30 +239,24 @@ html{
 }
 
 .r-item-2{
-    grid-area: 2/ 1/ 5 / 6;
+    grid-area: 2/ 1/ 9 / 6;
     display:flex;
     flex-direction:column;
     justify-content: center;
     align-items: center;
 }
 
-.r-item-3{
-    grid-area: 2/ 6/ 5 / 11;
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-}
+
 
 .r-image-container{
     width:400px;
     height: auto;
-    border: 4px solid #a3a3a3;
     overflow: hidden;
     justify-content: center;
     align-self:center;
     position: relative;
     border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(19, 19, 21, 0.516) ;
 }
 
 .r-image-container:hover{
@@ -358,6 +356,15 @@ img {
 
 
 /*WORKING EXPERIENCE*/
+
+.section-container {
+    max-width: 90%;         
+    margin: 20px auto;       
+    padding: 20px;           
+    border-radius: 30px;    
+    background-color:#525252; 
+}
+
 .container-work{
     display: grid;
     grid-template-rows: auto;
@@ -395,6 +402,13 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.w-paragraph {
+    max-width: 800px; 
+    margin: 0 auto; 
+    text-align: justify;
+    text-indent: 3em;
 }
 
 
