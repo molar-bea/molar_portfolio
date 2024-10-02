@@ -6,6 +6,7 @@ module.exports = {
       fontFamily:{
         leagueSpartan:['League Spartan', 'sans-serif'],
         merriweather:['Merriweather','serif'],
+        fredoka: ['Fredoka', 'sans-serif'],
       }
     },
   },
